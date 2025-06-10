@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="tricia.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Profile</title>
+    
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">My Profile</div>
+    <ul class="nav-links">
+        <li><a href="#profile">Profile</a></li>
+        <li class="dropdown">
+            <a href="#">More ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+            </ul>
+        </li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+</nav>
+
+
+    <div class="container">
+        <!--left side bar-->
+        <aside class="left-side">
+            <h7>Quick Links</h7>
+            <ul>
+                <li><a href="https://github.com/">GitHub</a></li>
+                <li><a href="https://linkedin.com/">LinkedIn</a></li>
+            </ul>
+            <h3>Contact Me</h3>
+               <p>Email: <a href="mailto:tricia@gmail.com">example@email.com</a></p>
+               <p>Phone: +256 786 623449</p>
+        </aside>
+        <!--main profile content-->
+        <main class="content">
+           <header>
+            <h1>Welcome to My Page</h1>
+        </header> 
+
+        <section class="profile">
+        <h3>My profile</h3>
+        <div class="prfile-container">
+             <img src="images/tricia.jpg" alt="Profile Picture" width="200">
+             <div class="prfile-info">
+                <p><strong> My name is Akol Patricia.</strong></p>
+                <p>I am learning web development</p>
+                <p>visit my <a href="https://github.com/">GitHub</a> profile.</p>
+             </div>  
+        </div>
+    </section>
+
+    <section class="hobbies">
+        <h2>My Hobibies</h2>
+        <ul>
+            <li>📖 Reading</li>
+            <li>✈️ Traveling</li>
+            <li>🎬 Watching</li>
+        </ul>
+    </section>
+
+    <section class="goals">
+        <h2>My goals for 2025</h2>
+        <ol>
+            <li>Learn HTML</li>
+            <li>Build my First website</li>
+            <li>Learn Python</li>
+            <li>Learn Cybersecurity and dats Science</li>
+        </ol>
+    </section>
+        </main>
+        <!--aside right sidebar-->
+        <aside class="right-side">
+            <h3>Featured Quote</h3>
+             <p class="quote">"Code is like humor. When you have to explain it, it's bad." – Cory House</p>
+             <p class="quote">"The best way to predict the future is to invent it." – Alan Kay</p>
+             <p class="quote">"First, solve the problem. Then, write the code." – John Johnson</p>
+             <p class="quote">"Programs must be written for people to read, and only incidentally for machines to execute." – Harold Abelson</p>
+             <p class="quote">"The most disastrous thing that you can ever learn is your first programming language." – Alan Kay</p>
+             <p class="quote">"Simplicity is the soul of efficiency." – Austin Freeman</p>
+             <p class="quote">"Good code is its own best documentation." – Steve McConnell</p>
+             <p class="quote">"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." – Martin Fowler</p>
+             <p class="quote">"Don't document bad code—rewrite it." – Brian Kernighan</p>
+             <p class="quote">"Programming isn't about what you know; it's about what you can figure out." – Chris Pine</p>
+        </aside>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

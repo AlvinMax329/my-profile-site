@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+  
+    font-family :'poppins',  sans-serif;
+    color: #2f1d1d;
+    text-align: center;
+    margin: 20px;
+
+}
+
+body {
+    background-image: url('images/pex2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+    
+}
+
+
+    
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-image: url(images/background\ 1.avif);
+    background-size: cover;
+    border-radius: 10PX;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/*side section*/
+@media screen and (max-width: 768px) {
+    .left-side, .right-side {
+        display: none;
+    }
+}
+
+.left-side, .right-side {
+    width: 200px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+
+/*positioning */
+.left-side {
+    left: 5%;
+    top: 15vh;
+
+}
+.right-side {
+    right: 5%;
+    top: 15vh;
+    
+
+}
+/* side stling */
+.left-side:hover, .right-side:hover {
+    transform: scale(1.05); /* Subtle hover effect */
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #003366;
+}
+
+
+
+
+
+
+
+ul, ol {
+    background: #ffe3e3;
+    border-radius: 5px;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 768px) {
+    .profile-container img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile, .hobbies, .goals {
+        background-size: contain;
+    }
+}
+
+
+
+.profile, .hobbies, .goals{
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.profile:hover, .hobbies:hover, .goals:hover{
+    transform: translateY(-5px);
+}
+
+.profile-container {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.profile-container img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);   
+}
+.profile-container img {
+    max-width: 120px;
+    height: auto;
+
+}
+.profile-container img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.profile-info {
+    text-align: left;
+    max-width: 400px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* within backgournds */
+.profile {
+    background-image: url(images/L2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.601); /* Light overlay */
+    background-blend-mode: lighten;
+}
+
+.hobbies {
+    background-image: url(images/L1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.goals {
+    background-image: url(images/back2.jpg);
+    background-size: cover;
+    background-position: initial;
+}
+
+
+
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 51, 102, 0.9);
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: visible;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 95%;
+    margin: auto;
+
+    
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.nav-links li {
+    list-style: none;
+    position: relative;
+}
+
+.nav-links a {
+    color: rgba(0, 51, 102, 0.95);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10pxS;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(184, 219, 255, 0.95);
+    padding: 10px;
+    width: auto;
+    min-width: 150px;
+    border-radius: 5px;
+    z-index: 150;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 51, 102, 0.95);
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
