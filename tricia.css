@@ -191,7 +191,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 51, 102, 0.9);
+    background: rgba(0, 51, 102, 0.6);
     color: white;
     padding: 15px 20px;
     position: fixed;
@@ -203,10 +203,9 @@ a:hover {
     white-space: nowrap;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 95%;
+    max-width: 85%;
     margin: auto;
 
-    
 }
 
 /* Logo */
@@ -264,7 +263,7 @@ a:hover {
 /* Responsive Navbar */
 @media screen and (max-width: 768px) {
     .nav-links {
-        display: block;
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;

@@ -34,7 +34,7 @@ document.querySelectorAll(".dropdown").forEach((dropdown) => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const contacts = [
-        "Email: <a href='mailto:example@gmail.com'>example@email.com</a>",
+        "Email: <a href='mailto:Akolpatricia07@gmail.com'>Akolpatricia07@gmail.com</a>",
         "Phone: +256 786 623449",
         "Social: <a href='https://linkedin.com/'>LinkedIn</a>",
         "GitHub: <a href='https://github.com/'>GitHub</a>"
